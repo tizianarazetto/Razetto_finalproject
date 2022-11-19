@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SuperBike</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg" style="background-color: white;">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"> 
+                <img src="images/superbike.png" alt="logo" width="60" height="60">
+            </a>
+            
+
+<button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#exampleModal">
+  Contacto
+</button>
+                  
+    </nav>
+
+    <div class="modal fade" id="exampleModal"  aria-labelledby="exampleModalLabel" >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Contacto</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p><strong>Administración y gestoría: </strong> +54 9 3444 620912</p>
+            <p><strong>Asesoramiento y ventas: </strong> +54 9 3444 440367  |  +54 9 3444 63-4686</p>
+            <p><strong>Instagram:</strong> superbike_gualeguay</p>
+            <p><strong>Mail:</strong> superbikesa@yahoo.com.ar</p>
+          </div>
+    
+        </div>
+      </div>
+    </div>
+
+
+    <div class="portada"> <video class="video" controls muted loop autoplay src="videos/superbike.mp4"></video> 
+         <hr></div>
+
+<main>
+     <div class="introa"> <p class="introTexto">Amplios planes de financiación</p> </div>
+     <div class="introb"> <p class="introTexto">La mejor tasación para tu usado</p> </div>
+</main>
+
+<img class="autito" src="images/auto.png" alt="">   
+
+
+<div class="textos">
+
+    <h1>Dónde encontrarnos</h1>
+    <p>Estamos en <strong>Gualeguay, Entre Rios.</strong>  Leandro N. Alem 76 (entre Alfredo Palacios y Segundo Gianello)</p>
+   
+    <h1>Sobre nosotros</h1>
+    <p> <strong>Un poco sobre nuestra historia y quiénes somos:</strong> </p>
+    <p>Somos una consecionaria de autos y motos, nuevos y usados, fundada en 1993 en Gualeguay. SuperBike es una empresa que, como su nombre lo dice, comenzó con la venta de motocicletas de gran cilindrada, importadas de  EEUU, y luego fue anexando todo tipo de motos, automóviles, cuatriciclos, camionetas. Nuestros años de trayectoria garantizan buen servicio, seguridad y eficiencia.</p>
+</div>
+
+    <div class="carrusel">
+
+        <a href="images/Image[12].jpeg" data-lightbox="image-set"><img class="fotos" src="images/Image[12].jpeg" alt="image"></a>
+        <a href="images/Image[8].jpeg" data-lightbox="image-set"><img class="fotos" src="images/Image[8].jpeg" alt="image"></a>
+        <a href="images/Image[24].jpeg" data-lightbox="image-set"><img class="fotos" src="images/Image[24].jpeg" alt="image"></a>
+        <a href="images/Image[1].jpeg" data-lightbox="image-set"><img class="fotos" src="images/Image[1].jpeg" alt="image"></a>
+        <a href="images/Image[21].jpeg" data-lightbox="image-set"><img class="fotos" src="images/Image[21].jpeg" alt="image"></a>
+</div>
+
+<div class="abajo">
+<h1 class="contacto">Contacto</h1>
+<p><strong>Tel. administración y gestoría: </strong> +54 9 3444 620912</p>
+<p><strong>Tel. asesoramiento y ventas: </strong> +54 9 3444 440367  |  +54 9 3444 63-4686</p>
+<p><strong>Instagram:</strong> superbike_gualeguay</p>
+<p><strong>Mail:</strong> superbikesa@yahoo.com.ar</p>
+
+<div class="linea"> </div>
+<h1>Consultas</h1>
+<p class="consulta">Podes dejar tu consulta en este formulario y estaremos en contacto pronto:</p>
+
+<div class="formulario">
+<form action="php/code.php" method="post">
+    <label class="nombre"> Nombre <input name="nombre" type="text" class="form-control" required placeholder="Tu nombre completo"> </label>
+    
+    <label>Email <input name="email" type="email" class="form-control" required placeholder="mail@mail.com"></label>
+    <label>WhatsApp <input name="telefono" type="text" class="form-control" required placeholder="Ej: 3444 502365"></label>
+    <label> Tu consulta:<textarea name="consulta" class="form-control" name="" id="" cols="30" rows="10"></textarea></label>
+    <label for="inputState">¿Cómo preferís que te contactemos?</label>
+    <select name="preferencia" id="inputState" class="form-control">
+      <option selected>Seleccionar...</option>
+      <option value="whatsapp">WhatsApp</option>
+      <option value="mail">Email</option>
+    </select>
+    <button type="submit" class="btn btn-secondary">Enviar</button>
+        </form>
+
+    </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox-plus-jquery.min.js"></script>
+
+    <script>
+        lightbox.option({
+            'wrapAround': true,
+            'positionFromTop': 200,
+            'resizeDuration': 1000,
+            'albumLabel':	"Imagen %1 de %2"
+        })
+    </script>
+
+</body>
+
+</html>

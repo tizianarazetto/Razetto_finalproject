@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+
+  body {
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Raleway', sans-serif;
+    color: black;
+  }
+
+.navbar {
+  width: 100%;
+  position: fixed;
+}
+
+.navbar-brand {
+  font-weight: 700;
+  font-size: 27px;
+  color: back;
+}
+
+.portada {
+    display: flex;
+    width: 100%;
+    height: 250px;
+    margin-top: 80px;
+}
+
+.video, img {
+    width: 100%;
+    object-fit: cover
+  }
+
+  h1 {
+    font-weight: 700;
+    font-size: 25px;
+    margin-top: 40px;
+    color: #2d2e82;
+  }
+ 
+  main {
+    display: grid;
+    grid-template-areas:
+    'introa introb';
+  }
+
+  .introa {grid-area: introa;
+  background-color: #009540;
+  color: white;}
+  .introb { grid-area: introb; 
+  background-color: #2d2e82;}
+
+  .introTexto {
+    color: white;
+    margin: 3px;
+    font-weight: 400;
+    font-size: 15px;
+    text-align: center;
+  }
+
+  .dropstart {
+    font-size: 20px;
+  }
+
+  .textos {
+    width: 1000px;
+    margin-left: 60px;
+  }
+
+  .abajo {
+  width: 1550px;
+  margin-left: 60px;
+  }
+
+  .carrusel {
+    margin-left: 60px;
+    width: 90%;
+    display: flex
+  }
+
+  .fotos {
+    display: flex;
+    width: 100%;
+    height: 300px;
+    padding-right: 20px;
+  }
+
+  form {
+    width: 300px;
+    height: 20px;
+    display: block;
+  }
+
+  label {
+    padding-top: 15px;
+  }
+
+  input, textarea {
+    width: 300px;
+  }
+
+  textarea {
+    height: 150px;
+  }
+
+  .nombre {
+    padding-top: 0;
+  }
+
+  .btn-secondary {
+    height: 40px;
+    width: 100px;
+    margin-top: 25px;
+    margin-left: 0px;
+    margin-bottom: 30px;
+    background-color: #2d2e82;
+    color: white;
+    text-align: center;
+  }
+
+  .btn-light {
+    background-color: white;
+    color: #2d2e82;
+    border: 1px solid #2d2e82;
+    font-weight: 700;
+    font-size: 18px;
+  }
+
+  .autito {
+    width: 80px;
+    display: block;
+    animation:move 8s infinite steps(100,end) ;
+    margin-top: 25px;
+    }
+
+    @keyframes move {
+      from  {transform:translateX(0px);}  
+      to {transform:translateX(1800px);} 
+      }
